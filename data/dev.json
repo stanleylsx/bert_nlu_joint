@@ -1,0 +1,3167 @@
+[
+  {
+    "text": "请帮我打开uc",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "uc"
+    }
+  },
+  {
+    "text": "打开汽车之家",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "汽车之家"
+    }
+  },
+  {
+    "text": "帮我打开人人",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "人人"
+    }
+  },
+  {
+    "text": "开微信",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "微信"
+    }
+  },
+  {
+    "text": "黎宇我要玩中国象棋",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "中国象棋"
+    }
+  },
+  {
+    "text": "给我打开一下qq",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "qq"
+    }
+  },
+  {
+    "text": "帮忙打开一下酷狗音乐播放音乐行不",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "酷狗音乐"
+    }
+  },
+  {
+    "text": "百度浏览器打开",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "百度浏览器"
+    }
+  },
+  {
+    "text": "搜索手机办公软件",
+    "domain": "app",
+    "intent": "QUERY",
+    "slots": {
+      "name": "办公软件"
+    }
+  },
+  {
+    "text": "凯立德",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "凯立德"
+    }
+  },
+  {
+    "text": "打开相机这",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "相机"
+    }
+  },
+  {
+    "text": "打开qq同步助手",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "qq同步助手"
+    }
+  },
+  {
+    "text": "打开淘宝购物",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "淘宝购物"
+    }
+  },
+  {
+    "text": "帮我找到微信",
+    "domain": "app",
+    "intent": "QUERY",
+    "slots": {
+      "name": "微信"
+    }
+  },
+  {
+    "text": "打开uc二哦",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "uc"
+    }
+  },
+  {
+    "text": "开启qq",
+    "domain": "app",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "qq"
+    }
+  },
+  {
+    "text": "查询许昌到中山的汽车。",
+    "domain": "bus",
+    "intent": "QUERY",
+    "slots": {
+      "Dest": "中山",
+      "Src": "许昌"
+    }
+  },
+  {
+    "text": "无锡到阜阳怎么坐汽车？",
+    "domain": "bus",
+    "intent": "QUERY",
+    "slots": {
+      "Dest": "阜阳",
+      "Src": "无锡"
+    }
+  },
+  {
+    "text": "去深圳怎么坐车？",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_city": "深圳"
+    }
+  },
+  {
+    "text": "南京到，黄山的汽车。",
+    "domain": "bus",
+    "intent": "QUERY",
+    "slots": {
+      "Dest": "黄山",
+      "Src": "南京"
+    }
+  },
+  {
+    "text": "从无锡市到西安市的汽车。",
+    "domain": "bus",
+    "intent": "QUERY",
+    "slots": {
+      "Dest": "西安市",
+      "Src": "无锡市"
+    }
+  },
+  {
+    "text": "在合肥怎么坐去南京的汽车",
+    "domain": "bus",
+    "intent": "QUERY",
+    "slots": {
+      "Dest": "南京",
+      "Src": "合肥"
+    }
+  },
+  {
+    "text": "北京到成都的汽车时刻表。",
+    "domain": "bus",
+    "intent": "QUERY",
+    "slots": {
+      "Dest": "成都",
+      "Src": "北京"
+    }
+  },
+  {
+    "text": "从台州到金华的汽车。",
+    "domain": "bus",
+    "intent": "QUERY",
+    "slots": {
+      "Dest": "金华",
+      "Src": "台州"
+    }
+  },
+  {
+    "text": "可以帮买火车票吗",
+    "domain": "train",
+    "intent": "QUERY",
+    "slots": {}
+  },
+  {
+    "text": "我要查找雷迪波尔电影院最新上映的大片",
+    "domain": "cinemas",
+    "intent": "QUERY",
+    "slots": {
+      "theatre": "雷迪波尔电影院"
+    }
+  },
+  {
+    "text": "给我放一部最新的电影。",
+    "domain": "cinemas",
+    "intent": "QUERY",
+    "slots": {}
+  },
+  {
+    "text": "电影搜索啊！",
+    "domain": "cinemas",
+    "intent": "QUERY",
+    "slots": {}
+  },
+  {
+    "text": "搜索合肥左岸电影城。",
+    "domain": "cinemas",
+    "intent": "QUERY",
+    "slots": {
+      "theatre": "合肥左岸电影城"
+    }
+  },
+  {
+    "text": "最近热门的电影。",
+    "domain": "cinemas",
+    "intent": "QUERY",
+    "slots": {}
+  },
+  {
+    "text": "现在电影院有什么好电影？",
+    "domain": "cinemas",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_time": "现在"
+    }
+  },
+  {
+    "text": "哦哦，最新的电影。",
+    "domain": "cinemas",
+    "intent": "QUERY",
+    "slots": {}
+  },
+  {
+    "text": "离我最近的电影院。",
+    "domain": "cinemas",
+    "intent": "QUERY",
+    "slots": {}
+  },
+  {
+    "text": "老马的电话是多少",
+    "domain": "telephone",
+    "intent": "QUERY",
+    "slots": {
+      "name": "老马"
+    }
+  },
+  {
+    "text": "把鱼苗的电话号码发给徐景明",
+    "domain": "message",
+    "intent": "SENDCONTACTS",
+    "slots": {
+      "name": "鱼苗",
+      "receiver": "徐景明"
+    }
+  },
+  {
+    "text": "张培的电话号码是多少",
+    "domain": "telephone",
+    "intent": "QUERY",
+    "slots": {
+      "name": "张培"
+    }
+  },
+  {
+    "text": "查看之丽丽的号码",
+    "domain": "contacts",
+    "intent": "QUERY",
+    "slots": {
+      "name": "之丽丽"
+    }
+  },
+  {
+    "text": "把李会计的电话发给小江",
+    "domain": "message",
+    "intent": "SENDCONTACTS",
+    "slots": {
+      "name": "李会计",
+      "receiver": "小江"
+    }
+  },
+  {
+    "text": "把刘荣涛的电话发给王华成",
+    "domain": "message",
+    "intent": "SENDCONTACTS",
+    "slots": {
+      "name": "刘荣涛",
+      "receiver": "王华成"
+    }
+  },
+  {
+    "text": "哦钢结构的电话是多少",
+    "domain": "contacts",
+    "intent": "QUERY",
+    "slots": {
+      "name": "哦钢结构"
+    }
+  },
+  {
+    "text": "把孟蕾的电话发给陈姬",
+    "domain": "message",
+    "intent": "SENDCONTACTS",
+    "slots": {
+      "name": "孟蕾",
+      "receiver": "陈姬"
+    }
+  },
+  {
+    "text": "把高建清的号码发给潘青华",
+    "domain": "message",
+    "intent": "SENDCONTACTS",
+    "slots": {
+      "name": "高建清",
+      "receiver": "潘青华"
+    }
+  },
+  {
+    "text": "银耳莲子粥怎么做",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "银耳莲子粥"
+    }
+  },
+  {
+    "text": "蛋黄焗薯条怎么做",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "蛋黄焗薯条"
+    }
+  },
+  {
+    "text": "扬州炒饭",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "扬州炒饭"
+    }
+  },
+  {
+    "text": "糖醋鲤鱼怎么做啊？你只负责吃，c则c。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "糖醋鲤鱼"
+    }
+  },
+  {
+    "text": "素鸡",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "素鸡"
+    }
+  },
+  {
+    "text": "萝卜炖排骨汤怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "萝卜炖排骨汤"
+    }
+  },
+  {
+    "text": "我说吃飞蟹，怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "飞蟹"
+    }
+  },
+  {
+    "text": "黑芝麻怎么炒？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "黑芝麻"
+    }
+  },
+  {
+    "text": "板栗怎么煮？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "板栗"
+    }
+  },
+  {
+    "text": "鱼香肉丝，怎么炒？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "鱼香肉丝"
+    }
+  },
+  {
+    "text": "搜索烤饼的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "烤饼"
+    }
+  },
+  {
+    "text": "小白菜拌豆腐怎么做呀？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "白菜拌豆腐"
+    }
+  },
+  {
+    "text": "猪肉丸子汤怎么做啊？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "猪肉丸子汤"
+    }
+  },
+  {
+    "text": "做苹果麦片粥需要哪写材料？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "苹果麦片粥"
+    }
+  },
+  {
+    "text": "帮我搜索一下红烧排骨。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧排骨"
+    }
+  },
+  {
+    "text": "怎么样煮方便面。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "煮方便面"
+    }
+  },
+  {
+    "text": "黑米红豆粥的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "黑米红豆粥"
+    }
+  },
+  {
+    "text": "豆沙包。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "豆沙包"
+    }
+  },
+  {
+    "text": "赵柏田鸡怎么做啊？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "田鸡"
+    }
+  },
+  {
+    "text": "做黄焖小土豆怎么做啊？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "焖小土豆"
+    }
+  },
+  {
+    "text": "酱油鸡。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "酱油鸡"
+    }
+  },
+  {
+    "text": "好吧，我想知道稻香排骨是怎么做的？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "稻香排骨"
+    }
+  },
+  {
+    "text": "红烧牛肉面我想来一碗。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧牛肉面"
+    }
+  },
+  {
+    "text": "帮我找出红烧肉的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧肉"
+    }
+  },
+  {
+    "text": "煲鸡汤。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "煲鸡汤"
+    }
+  },
+  {
+    "text": "芒果西米露怎么做啊",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "芒果西米露"
+    }
+  },
+  {
+    "text": "胡萝卜怎么炒好吃？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "胡萝卜"
+    }
+  },
+  {
+    "text": "红烧肉的做法啊！",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧肉"
+    }
+  },
+  {
+    "text": "就拉下的饺子怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "饺子"
+    }
+  },
+  {
+    "text": "酸辣藕丁的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "酸辣藕丁"
+    }
+  },
+  {
+    "text": "用电压力锅怎么蒸米粉肉。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "蒸米粉肉",
+      "utensil": "压力锅"
+    }
+  },
+  {
+    "text": "请问红烧肉的做法？你，你。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧肉"
+    }
+  },
+  {
+    "text": "孜然排骨怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "孜然排骨"
+    }
+  },
+  {
+    "text": "干锅香辣虾",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "干锅香辣虾"
+    }
+  },
+  {
+    "text": "肥肠的做法",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "肥肠"
+    }
+  },
+  {
+    "text": "海虾的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "海虾"
+    }
+  },
+  {
+    "text": "用菜籽油做面包",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "面包",
+      "ingredient": "菜籽油"
+    }
+  },
+  {
+    "text": "打豆浆剩下的豆渣怎样做，好吃？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "豆渣"
+    }
+  },
+  {
+    "text": "脆瓜。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "脆瓜"
+    }
+  },
+  {
+    "text": "灌汤小笼包怎样做。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "灌汤小笼包"
+    }
+  },
+  {
+    "text": "做红烧肉怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧肉"
+    }
+  },
+  {
+    "text": "酸菜鱼怎样做",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "酸菜鱼"
+    }
+  },
+  {
+    "text": "打了怎么做红烧肉的做法？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧肉"
+    }
+  },
+  {
+    "text": "蒜茄子怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "蒜茄子"
+    }
+  },
+  {
+    "text": "木瓜汤怎么做",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "木瓜汤"
+    }
+  },
+  {
+    "text": "炝拌土豆丝。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "炝拌土豆丝"
+    }
+  },
+  {
+    "text": "宫爆鸡丁的菜谱。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "宫爆鸡丁"
+    }
+  },
+  {
+    "text": "江苏路红薯粉怎么做好吃？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "红薯粉"
+    }
+  },
+  {
+    "text": "烧鸭怎么做",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "烧鸭"
+    }
+  },
+  {
+    "text": "姐你红烧肉怎么做呀",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧肉"
+    }
+  },
+  {
+    "text": "臭豆腐怎么做啊？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "臭豆腐"
+    }
+  },
+  {
+    "text": "做红烧肉。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧肉"
+    }
+  },
+  {
+    "text": "不懂饭的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "饭"
+    }
+  },
+  {
+    "text": "鸡蛋的做法",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "鸡蛋"
+    }
+  },
+  {
+    "text": "红烧带鱼怎么做？你？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧带鱼"
+    }
+  },
+  {
+    "text": "鱼香肉丝的做法啊！",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "鱼香肉丝"
+    }
+  },
+  {
+    "text": "周黑鸭怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "鸭"
+    }
+  },
+  {
+    "text": "那好，那你告诉我西红柿炒鸡蛋，怎么去做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "西红柿炒鸡蛋"
+    }
+  },
+  {
+    "text": "干贝怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "干贝"
+    }
+  },
+  {
+    "text": "怎么做？酸菜鱼？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "酸菜鱼"
+    }
+  },
+  {
+    "text": "鸡爪怎么炒？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "鸡爪"
+    }
+  },
+  {
+    "text": "干锅鱼怎么做",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "干锅鱼"
+    }
+  },
+  {
+    "text": "糖醋排骨怎么做？好了额，你。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "糖醋排骨"
+    }
+  },
+  {
+    "text": "清蒸鱼怎么做？吴？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "清蒸鱼"
+    }
+  },
+  {
+    "text": "土豆粉怎么做好吃？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "土豆粉"
+    }
+  },
+  {
+    "text": "五梆瓜鸡蛋汤怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "鸡蛋汤"
+    }
+  },
+  {
+    "text": "刘林面怎么做啊？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "面"
+    }
+  },
+  {
+    "text": "酸菜粉条肉的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "酸菜粉条",
+      "ingredient": "肉"
+    }
+  },
+  {
+    "text": "童子鸡的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "童子鸡"
+    }
+  },
+  {
+    "text": "讯飞语点请你搜索一下番茄炒蛋怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "番茄炒蛋"
+    }
+  },
+  {
+    "text": "红烧肉怎么煮啊",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧肉"
+    }
+  },
+  {
+    "text": "面包怎么做",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "面包"
+    }
+  },
+  {
+    "text": "请问鱼块的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "鱼块"
+    }
+  },
+  {
+    "text": "猪大肠怎么炒？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "猪大肠"
+    }
+  },
+  {
+    "text": "小猪哨糖醋排骨的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "糖醋排骨"
+    }
+  },
+  {
+    "text": "嗯咯鸡爪怎么做的。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "鸡爪"
+    }
+  },
+  {
+    "text": "鲤鱼怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "鲤鱼"
+    }
+  },
+  {
+    "text": "酸菜鱼，怎么烧？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "酸菜鱼"
+    }
+  },
+  {
+    "text": "炸里鸡的做法。",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "炸里鸡"
+    }
+  },
+  {
+    "text": "不，做个红烧肉怎么做？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧肉"
+    }
+  },
+  {
+    "text": "福寿鱼怎么煮比较好吃？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "ingredient": "福寿鱼"
+    }
+  },
+  {
+    "text": "拔丝芋头怎么做",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "拔丝芋头"
+    }
+  },
+  {
+    "text": "给我看邮件",
+    "domain": "email",
+    "intent": "LAUNCH",
+    "slots": {}
+  },
+  {
+    "text": "帮我发邮件给婷婷",
+    "domain": "email",
+    "intent": "SEND",
+    "slots": {
+      "name": "婷婷"
+    }
+  },
+  {
+    "text": "替我回复这封邮件",
+    "domain": "email",
+    "intent": "REPLY",
+    "slots": {}
+  },
+  {
+    "text": "我要回复这个邮件",
+    "domain": "email",
+    "intent": "REPLY",
+    "slots": {}
+  },
+  {
+    "text": "发邮件给灿灿说明早我们一起跑步",
+    "domain": "email",
+    "intent": "SEND",
+    "slots": {
+      "content": "明早我们一起跑步",
+      "name": "灿灿"
+    }
+  },
+  {
+    "text": "给我看新邮件",
+    "domain": "email",
+    "intent": "LAUNCH",
+    "slots": {}
+  },
+  {
+    "text": "我想打开新邮件",
+    "domain": "email",
+    "intent": "LAUNCH",
+    "slots": {}
+  },
+  {
+    "text": "我想要全部答复",
+    "domain": "email",
+    "intent": "REPLAY_ALL",
+    "slots": {}
+  },
+  {
+    "text": "今天晚上有没有中国好声音呢？",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "今天",
+      "datetime_time": "晚上",
+      "name": "中国好声音"
+    }
+  },
+  {
+    "text": "你知道现在广东卫视在演什么吗？",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_time": "现在",
+      "tvchannel": "广东卫视"
+    }
+  },
+  {
+    "text": "今晚看什么电影？",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "category": "电影",
+      "datetime_time": "今晚"
+    }
+  },
+  {
+    "text": "金鹰卡通今天晚上放什么节目？",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "今天",
+      "datetime_time": "晚上",
+      "tvchannel": "金鹰卡通"
+    }
+  },
+  {
+    "text": "电影频道今天放什么",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "今天",
+      "tvchannel": "电影频道"
+    }
+  },
+  {
+    "text": "15号的我愿意",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "15号",
+      "name": "我愿意"
+    }
+  },
+  {
+    "text": "北京青年频道谁在说",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "name": "谁在说",
+      "tvchannel": "北京青年频道"
+    }
+  },
+  {
+    "text": "看一下今天晚上广西台有没有警戒线？",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "今天",
+      "datetime_time": "晚上",
+      "name": "警戒线",
+      "tvchannel": "广西台"
+    }
+  },
+  {
+    "text": "世界军事中央台世界军事",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "name": "世界军事",
+      "tvchannel": "中央台"
+    }
+  },
+  {
+    "text": "广西电视台现在播放什么节目？",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_time": "现在",
+      "tvchannel": "广西电视台"
+    }
+  },
+  {
+    "text": "CCTV9明晚有转播仁心解码2呢",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_time": "明晚",
+      "name": "仁心解码2",
+      "tvchannel": "CCTV9"
+    }
+  },
+  {
+    "text": "搜一下今天中午开始放郭的秀",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "今天",
+      "datetime_time": "中午",
+      "name": "郭的秀"
+    }
+  },
+  {
+    "text": "读书频道上个星期五有播放新闻联播吗",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "上个星期五",
+      "name": "新闻联播",
+      "tvchannel": "读书频道"
+    }
+  },
+  {
+    "text": "湖南卫视有什么节目",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "tvchannel": "湖南卫视"
+    }
+  },
+  {
+    "text": "现在有什么好的电影呢？",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "category": "电影",
+      "datetime_time": "现在"
+    }
+  },
+  {
+    "text": "明晚真人秀频道有播放过百变大咖秀呢",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_time": "明晚",
+      "name": "百变大咖秀",
+      "tvchannel": "真人秀频道"
+    }
+  },
+  {
+    "text": "湖北卫视今天下午六点以后开始播男生女生向前冲",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "今天",
+      "datetime_time": "下午六点以后",
+      "name": "男生女生向前冲",
+      "tvchannel": "湖北卫视"
+    }
+  },
+  {
+    "text": "帮我查查北京电视台-6上周六开始美味的想念呢",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "上周六",
+      "name": "美味的想念",
+      "tvchannel": "北京电视台-6"
+    }
+  },
+  {
+    "text": "中央六台的节目单",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "tvchannel": "中央六台"
+    }
+  },
+  {
+    "text": "回放昨晚的焦点访谈",
+    "domain": "epg",
+    "intent": "LOOK_BACK",
+    "slots": {
+      "datetime_time": "昨晚",
+      "name": "焦点访谈"
+    }
+  },
+  {
+    "text": "明天安徽卫视演什么",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "明天",
+      "tvchannel": "安徽卫视"
+    }
+  },
+  {
+    "text": "江西卫视三天之后放一站到底么",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_date": "三天之后",
+      "name": "一站到底",
+      "tvchannel": "江西卫视"
+    }
+  },
+  {
+    "text": "贵州卫视今晚看什么电视剧？",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "category": "电视剧",
+      "datetime_time": "今晚",
+      "tvchannel": "贵州卫视"
+    }
+  },
+  {
+    "text": "湖南卫视现在演什么节目",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "datetime_time": "现在",
+      "tvchannel": "湖南卫视"
+    }
+  },
+  {
+    "text": "从广州到贵阳市的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "贵阳",
+      "startLoc_city": "广州"
+    }
+  },
+  {
+    "text": "东营到济南的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "济南",
+      "startLoc_city": "东营"
+    }
+  },
+  {
+    "text": "后天去大连的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "大连",
+      "startDate_date": "后天"
+    }
+  },
+  {
+    "text": "查询大大后天广州到武汉的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "武汉",
+      "startDate_date": "大大后天",
+      "startLoc_city": "广州"
+    }
+  },
+  {
+    "text": "十月四号从广州到北京的飞机票多少钱",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "北京",
+      "startDate_date": "十月四号",
+      "startLoc_city": "广州"
+    }
+  },
+  {
+    "text": "查询上海到丽江飞机票的价格",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "丽江",
+      "startLoc_city": "上海"
+    }
+  },
+  {
+    "text": "明天从桂林到杭州的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "杭州",
+      "startDate_date": "明天",
+      "startLoc_city": "桂林"
+    }
+  },
+  {
+    "text": "武汉到北京的飞机票",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "北京",
+      "startLoc_city": "武汉"
+    }
+  },
+  {
+    "text": "有没有下周二到贵阳的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "贵阳",
+      "startDate_date": "下周二"
+    }
+  },
+  {
+    "text": "明天去徐州的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "徐州",
+      "startDate_date": "明天"
+    }
+  },
+  {
+    "text": "帮我看一下明天去北京的飞机",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "北京",
+      "startDate_date": "明天"
+    }
+  },
+  {
+    "text": "明天去纽约的航班。",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "纽约",
+      "startDate_date": "明天"
+    }
+  },
+  {
+    "text": "查询今天上海到成都的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "成都",
+      "startDate_date": "今天",
+      "startLoc_city": "上海"
+    }
+  },
+  {
+    "text": "查下上海到太原的机票",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "太原",
+      "startLoc_city": "上海"
+    }
+  },
+  {
+    "text": "上海到北京的飞机航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "北京",
+      "startLoc_city": "上海"
+    }
+  },
+  {
+    "text": "机票",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {}
+  },
+  {
+    "text": "去桂林的航班怎样",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "桂林"
+    }
+  },
+  {
+    "text": "阜阳到温州的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "温州",
+      "startLoc_city": "阜阳"
+    }
+  },
+  {
+    "text": "七月三十一日上海虹桥到北京的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "北京",
+      "startDate_date": "七月三十一日",
+      "startLoc_city": "上海",
+      "startLoc_poi": "虹桥"
+    }
+  },
+  {
+    "text": "帮我查一下从济南到福州的机票",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "福州",
+      "startLoc_city": "济南"
+    }
+  },
+  {
+    "text": "查询后天广州到上海的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "上海",
+      "startDate_date": "后天",
+      "startLoc_city": "广州"
+    }
+  },
+  {
+    "text": "感冒注意什么？",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "感冒"
+    }
+  },
+  {
+    "text": "糖尿病注意什么？",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "糖尿病"
+    }
+  },
+  {
+    "text": "更年期综合症。",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "更年期综合症"
+    }
+  },
+  {
+    "text": "肠胃炎怎么治？",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "肠胃炎"
+    }
+  },
+  {
+    "text": "得了关节炎怎么办？",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "关节炎"
+    }
+  },
+  {
+    "text": "得了皮肤病怎么办？",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "皮肤病"
+    }
+  },
+  {
+    "text": "鼻息肉",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "鼻息肉"
+    }
+  },
+  {
+    "text": "甲亢怎么治疗？",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "甲亢"
+    }
+  },
+  {
+    "text": "多囊肾怎么治啊？",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "多囊肾"
+    }
+  },
+  {
+    "text": "内分泌失调了怎么调理？",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "内分泌失调"
+    }
+  },
+  {
+    "text": "包皮包茎",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "包皮包茎"
+    }
+  },
+  {
+    "text": "乳腺癌。",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "乳腺癌"
+    }
+  },
+  {
+    "text": "黄疸",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "黄疸"
+    }
+  },
+  {
+    "text": "暴发性紫癜",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "暴发性紫癜"
+    }
+  },
+  {
+    "text": "肺结核要注意些啥",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "肺结核"
+    }
+  },
+  {
+    "text": "过敏性鼻炎怎么治疗",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "过敏性鼻炎"
+    }
+  },
+  {
+    "text": "痛经。",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "痛经"
+    }
+  },
+  {
+    "text": "如何治疗脚气",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "脚气"
+    }
+  },
+  {
+    "text": "破伤风该怎么处理",
+    "domain": "health",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "破伤风"
+    }
+  },
+  {
+    "text": "帮我查一下2013年2月8日开奖的七星彩中奖号码",
+    "domain": "lottery",
+    "intent": "NUMBER_QUERY",
+    "slots": {
+      "datetime_date": "2013年2月8日",
+      "name": "七星彩"
+    }
+  },
+  {
+    "text": "看一看七乐彩的信息",
+    "domain": "lottery",
+    "intent": "NUMBER_QUERY",
+    "slots": {
+      "name": "七乐彩"
+    }
+  },
+  {
+    "text": "搜索25选5的获奖号码",
+    "domain": "lottery",
+    "intent": "NUMBER_QUERY",
+    "slots": {
+      "name": "25选5"
+    }
+  },
+  {
+    "text": "河北在哪里",
+    "domain": "map",
+    "intent": "POSITION",
+    "slots": {
+      "location_province": "河北"
+    }
+  },
+  {
+    "text": "从济源市到河南省电信分公司怎么走",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "电信分公司",
+      "endLoc_province": "河南省",
+      "startLoc_city": "济源市"
+    }
+  },
+  {
+    "text": "嗯我想知道曲阜在什么地方",
+    "domain": "map",
+    "intent": "POSITION",
+    "slots": {
+      "location_area": "曲阜"
+    }
+  },
+  {
+    "text": "龙口西路在哪里",
+    "domain": "map",
+    "intent": "POSITION",
+    "slots": {
+      "location_poi": "龙口西路"
+    }
+  },
+  {
+    "text": "去金湖县城",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "金湖县城"
+    }
+  },
+  {
+    "text": "上海到北京怎么走",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_city": "北京",
+      "startLoc_city": "上海"
+    }
+  },
+  {
+    "text": "玉照公园怎么走",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "玉照公园"
+    }
+  },
+  {
+    "text": "怎么去农业银行",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "农业银行"
+    }
+  },
+  {
+    "text": "南山医院到北大医院路线",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "北大医院",
+      "startLoc_poi": "南山医院"
+    }
+  },
+  {
+    "text": "我想到科大讯飞走高速路线",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "科大讯飞"
+    }
+  },
+  {
+    "text": "从武汉到呼和浩特",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_city": "呼和浩特",
+      "startLoc_city": "武汉"
+    }
+  },
+  {
+    "text": "帮我看一下到科大讯飞最快的是哪条路线",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "科大讯飞"
+    }
+  },
+  {
+    "text": "杭州到上海",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_city": "上海",
+      "startLoc_city": "杭州"
+    }
+  },
+  {
+    "text": "北京西站在哪",
+    "domain": "map",
+    "intent": "POSITION",
+    "slots": {
+      "location_poi": "北京西站"
+    }
+  },
+  {
+    "text": "导航到奉贤",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_area": "奉贤"
+    }
+  },
+  {
+    "text": "查查科大讯飞在哪儿",
+    "domain": "map",
+    "intent": "POSITION",
+    "slots": {
+      "location_poi": "科大讯飞"
+    }
+  },
+  {
+    "text": "帮我查一下到狼牙山怎么走",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "狼牙山"
+    }
+  },
+  {
+    "text": "查查科大讯飞在哪里",
+    "domain": "map",
+    "intent": "POSITION",
+    "slots": {
+      "location_poi": "科大讯飞"
+    }
+  },
+  {
+    "text": "新东站怎么走",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "新东站"
+    }
+  },
+  {
+    "text": "去红心中路怎么走",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "红心中路"
+    }
+  },
+  {
+    "text": "从科大讯飞到天鹅湖怎么走能不走高速",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "天鹅湖",
+      "startLoc_poi": "科大讯飞"
+    }
+  },
+  {
+    "text": "去华强北的路怎么走",
+    "domain": "map",
+    "intent": "ROUTE",
+    "slots": {
+      "endLoc_poi": "华强北"
+    }
+  },
+  {
+    "text": "查询合肥市植物园的位置",
+    "domain": "map",
+    "intent": "POSITION",
+    "slots": {
+      "location_poi": "合肥市植物园"
+    }
+  },
+  {
+    "text": "2013年亚洲冠军联赛恒广州恒大比赛时间。",
+    "domain": "match",
+    "intent": "QUERY",
+    "slots": {
+      "category": "亚洲冠军联赛",
+      "datetime_date": "2013年",
+      "name": "广州恒大"
+    }
+  },
+  {
+    "text": "广州恒大比赛谁赢了。",
+    "domain": "match",
+    "intent": "QUERY",
+    "slots": {
+      "name": "广州恒大"
+    }
+  },
+  {
+    "text": "中超赛事预告，你。",
+    "domain": "match",
+    "intent": "QUERY",
+    "slots": {
+      "category": "中超",
+      "type": "预告"
+    }
+  },
+  {
+    "text": "宏大俱乐部赛程。",
+    "domain": "match",
+    "intent": "QUERY",
+    "slots": {
+      "name": "宏大"
+    }
+  },
+  {
+    "text": "中超赛事预告，从在哪里看呢？",
+    "domain": "match",
+    "intent": "QUERY",
+    "slots": {
+      "category": "中超",
+      "type": "预告"
+    }
+  },
+  {
+    "text": "中超比赛。",
+    "domain": "match",
+    "intent": "QUERY",
+    "slots": {
+      "category": "中超"
+    }
+  },
+  {
+    "text": "武汉卓尔的赛程。",
+    "domain": "match",
+    "intent": "QUERY",
+    "slots": {
+      "name": "武汉卓尔"
+    }
+  },
+  {
+    "text": "广州恒大比赛比分。",
+    "domain": "match",
+    "intent": "QUERY",
+    "slots": {
+      "name": "广州恒大",
+      "type": "比分"
+    }
+  },
+  {
+    "text": "发短信给王二白叫她明天过来玩",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "content": "明天过来玩",
+      "name": "王二白"
+    }
+  },
+  {
+    "text": "给潘开国发短信",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "潘开国"
+    }
+  },
+  {
+    "text": "发短信给王勋连说我很好",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "content": "我很好",
+      "name": "王勋连"
+    }
+  },
+  {
+    "text": "发短信给子健晚上回家吃饭",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "content": "晚上回家吃饭",
+      "name": "子健"
+    }
+  },
+  {
+    "text": "发消息给周磊",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "周磊"
+    }
+  },
+  {
+    "text": "发短信方钰玲",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "方钰玲"
+    }
+  },
+  {
+    "text": "写短信给颖村",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "颖村"
+    }
+  },
+  {
+    "text": "给杨凯发短信",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "杨凯"
+    }
+  },
+  {
+    "text": "给李慧发个短信说我要回家",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "content": "我要回家",
+      "name": "李慧"
+    }
+  },
+  {
+    "text": "发送短信给老婆我在三号楼三零幺刚才那个教室关门了",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "content": "我在三号楼三零幺刚才那个教室关门了",
+      "name": "老婆"
+    }
+  },
+  {
+    "text": "给孟南发短信",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "孟南"
+    }
+  },
+  {
+    "text": "发条短信给杨桑",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "杨桑"
+    }
+  },
+  {
+    "text": "发短信给王曼希望你幸福",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "王曼"
+    }
+  },
+  {
+    "text": "发短信给林晓云说我爱你",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "content": "我爱你",
+      "name": "林晓云"
+    }
+  },
+  {
+    "text": "传简讯给家里",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "家里"
+    }
+  },
+  {
+    "text": "发信息给瀌瀌",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "瀌瀌"
+    }
+  },
+  {
+    "text": "我要发信息给高鹤航",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "高鹤航"
+    }
+  },
+  {
+    "text": "给查乐发短信",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "查乐"
+    }
+  },
+  {
+    "text": "给栾佳佳发短信说回到济南了",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "content": "回到济南了",
+      "name": "栾佳佳"
+    }
+  },
+  {
+    "text": "给石荣福发短信",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "石荣福"
+    }
+  },
+  {
+    "text": "点一首爱情买卖来听听",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "爱情买卖"
+    }
+  },
+  {
+    "text": "我叫小沈阳这首歌",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "我叫小沈阳"
+    }
+  },
+  {
+    "text": "播放音乐喜帖街。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "喜帖街"
+    }
+  },
+  {
+    "text": "随便唱首歌。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {}
+  },
+  {
+    "text": "给我来一首，相见恨晚的音乐。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "相见恨晚"
+    }
+  },
+  {
+    "text": "she的歌",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "artist": "she"
+    }
+  },
+  {
+    "text": "我想听期待这首歌",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "期待"
+    }
+  },
+  {
+    "text": "来一首隐形的翅膀。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "隐形的翅膀"
+    }
+  },
+  {
+    "text": "来一首不可以。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "不可以"
+    }
+  },
+  {
+    "text": "哦来一首忘情水",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "忘情水"
+    }
+  },
+  {
+    "text": "歌曲白天不懂夜的黑",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "白天不懂夜的黑"
+    }
+  },
+  {
+    "text": "我想听星月神话",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "星月神话"
+    }
+  },
+  {
+    "text": "来一首有点舍不得",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "有点舍不得"
+    }
+  },
+  {
+    "text": "播放音乐月亮之上的。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "月亮之上"
+    }
+  },
+  {
+    "text": "我要听张雨生的歌。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "artist": "张雨生"
+    }
+  },
+  {
+    "text": "来点歌听听",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {}
+  },
+  {
+    "text": "来一首我们的歌谣。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "我们的歌谣"
+    }
+  },
+  {
+    "text": "给我放一首最炫民族风。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "最炫民族风"
+    }
+  },
+  {
+    "text": "放一首青花瓷哦哦",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "青花瓷"
+    }
+  },
+  {
+    "text": "毛阿敏的歌",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "artist": "毛阿敏"
+    }
+  },
+  {
+    "text": "播放上海滩。",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "上海滩"
+    }
+  },
+  {
+    "text": "来首出师表",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "出师表"
+    }
+  },
+  {
+    "text": "啊，社会新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "category": "社会"
+    }
+  },
+  {
+    "text": "泰州新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "location_city": "泰州"
+    }
+  },
+  {
+    "text": "是否还有其他关于钓鱼岛的新闻",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "keyword": "钓鱼岛"
+    }
+  },
+  {
+    "text": "今日头条新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "media": "今日头条"
+    }
+  },
+  {
+    "text": "钓鱼岛新闻",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "keyword": "钓鱼岛"
+    }
+  },
+  {
+    "text": "k新闻想听新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {}
+  },
+  {
+    "text": "t我要听新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {}
+  },
+  {
+    "text": "盘锦新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "location_city": "盘锦"
+    }
+  },
+  {
+    "text": "我想听重庆新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "location_city": "重庆"
+    }
+  },
+  {
+    "text": "现在有什么热点新闻？",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "category": "热点",
+      "datetime_time": "现在"
+    }
+  },
+  {
+    "text": "关注一下今天的欧洲杯新闻",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "datetime_date": "今天",
+      "keyword": "欧洲杯"
+    }
+  },
+  {
+    "text": "搜索最新新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {}
+  },
+  {
+    "text": "该我读新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {}
+  },
+  {
+    "text": "占田你给我放一下最近的新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "datetime_date": "最近"
+    }
+  },
+  {
+    "text": "帮我查一查今天的新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "datetime_date": "今天"
+    }
+  },
+  {
+    "text": "么，哥来一下最新的新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {}
+  },
+  {
+    "text": "哦，听新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {}
+  },
+  {
+    "text": "我想知道今天的娱乐新闻。",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {
+      "category": "娱乐",
+      "datetime_date": "今天"
+    }
+  },
+  {
+    "text": "等，请播报新闻",
+    "domain": "news",
+    "intent": "PLAY",
+    "slots": {}
+  },
+  {
+    "text": "有什么好看的校园小说",
+    "domain": "novel",
+    "intent": "QUERY",
+    "slots": {
+      "category": "校园",
+      "popularity": "好看"
+    }
+  },
+  {
+    "text": "搜一搜三毛的小说",
+    "domain": "novel",
+    "intent": "QUERY",
+    "slots": {
+      "author": "三毛"
+    }
+  },
+  {
+    "text": "我要看唯美童话小说",
+    "domain": "novel",
+    "intent": "QUERY",
+    "slots": {
+      "category": "唯美童话"
+    }
+  },
+  {
+    "text": "我要看末世进化小说",
+    "domain": "novel",
+    "intent": "QUERY",
+    "slots": {
+      "category": "末世进化"
+    }
+  },
+  {
+    "text": "搜索极品天王",
+    "domain": "novel",
+    "intent": "QUERY",
+    "slots": {
+      "name": "极品天王"
+    }
+  },
+  {
+    "text": "找找三毛的爱情小说",
+    "domain": "novel",
+    "intent": "QUERY",
+    "slots": {
+      "author": "三毛",
+      "category": "爱情"
+    }
+  },
+  {
+    "text": "我想看现在很流行的小说",
+    "domain": "novel",
+    "intent": "QUERY",
+    "slots": {
+      "popularity": "流行"
+    }
+  },
+  {
+    "text": "我要看图文小说",
+    "domain": "novel",
+    "intent": "QUERY",
+    "slots": {
+      "category": "图文"
+    }
+  },
+  {
+    "text": "你背首唐诗给我听听啊",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "dynasty": "唐"
+    }
+  },
+  {
+    "text": "来一首李清照的词",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "李清照"
+    }
+  },
+  {
+    "text": "来一首白居易的诗",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "白居易"
+    }
+  },
+  {
+    "text": "唐代诗人李白。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "李白",
+      "dynasty": "唐"
+    }
+  },
+  {
+    "text": "搜索一下白居易的诗。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "白居易"
+    }
+  },
+  {
+    "text": "火气冲天，下一句是什么？",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "火气冲天",
+      "queryField": "下一句"
+    }
+  },
+  {
+    "text": "念首唐诗吧！",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "dynasty": "唐"
+    }
+  },
+  {
+    "text": "给我背一首诗。",
+    "domain": "poetry",
+    "intent": "DEFAULT",
+    "slots": {}
+  },
+  {
+    "text": "朗读一首李白的诗呗！",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "李白"
+    }
+  },
+  {
+    "text": "背首宋词。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "dynasty": "宋"
+    }
+  },
+  {
+    "text": "呦呦鹿鸣的下一句。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "呦呦鹿鸣",
+      "queryField": "下一句"
+    }
+  },
+  {
+    "text": "那给我背静夜思。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "name": "静夜思"
+    }
+  },
+  {
+    "text": "朗读岳飞的满江红。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "岳飞",
+      "name": "满江红"
+    }
+  },
+  {
+    "text": "天王盖地虎的下一句是什么？",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "天王盖地虎",
+      "queryField": "下一句"
+    }
+  },
+  {
+    "text": "唐诗哦。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "dynasty": "唐"
+    }
+  },
+  {
+    "text": "说个李白的诗来听听。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "李白"
+    }
+  },
+  {
+    "text": "造化钟神秀的下一句是什么？",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "造化钟神秀",
+      "queryField": "下一句"
+    }
+  },
+  {
+    "text": "读首唐诗来听听。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "dynasty": "唐"
+    }
+  },
+  {
+    "text": "阿妈，来一首白居易的诗。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "白居易"
+    }
+  },
+  {
+    "text": "尽在不言中下一句是什么？",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "尽在不言中",
+      "queryField": "下一句"
+    }
+  },
+  {
+    "text": "来一首琵琶行。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "name": "琵琶行"
+    }
+  },
+  {
+    "text": "背一首李白的诗来听听。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "李白"
+    }
+  },
+  {
+    "text": "搜索岳飞的诗满江红。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "岳飞",
+      "name": "满江红"
+    }
+  },
+  {
+    "text": "背诵唐诗三百首静夜思。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "dynasty": "唐",
+      "name": "静夜思"
+    }
+  },
+  {
+    "text": "来首纳兰性德的词。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "纳兰性德"
+    }
+  },
+  {
+    "text": "背一首声声慢。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "name": "声声慢"
+    }
+  },
+  {
+    "text": "若相惜不弃下一句是什么？",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "keyword": "若相惜不弃",
+      "queryField": "下一句"
+    }
+  },
+  {
+    "text": "背首杜甫的诗啊？",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "杜甫"
+    }
+  },
+  {
+    "text": "背唐诗李白侠客行",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "李白",
+      "dynasty": "唐",
+      "name": "侠客行"
+    }
+  },
+  {
+    "text": "读首唐诗",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "dynasty": "唐"
+    }
+  },
+  {
+    "text": "朗诵一首李白的诗词。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "李白"
+    }
+  },
+  {
+    "text": "毛泽东的诗哦。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "毛泽东"
+    }
+  },
+  {
+    "text": "我背一首生查子。",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "name": "生查子"
+    }
+  },
+  {
+    "text": "我给我念一首李白的诗吧？",
+    "domain": "poetry",
+    "intent": "QUERY",
+    "slots": {
+      "author": "李白"
+    }
+  },
+  {
+    "text": "打开安徽交通台",
+    "domain": "radio",
+    "intent": "LAUNCH",
+    "slots": {
+      "name": "安徽交通台"
+    }
+  },
+  {
+    "text": "帮忙讲几个谜语给我猜。",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "谜语"
+    }
+  },
+  {
+    "text": "说个谜语给我猜猜。",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "谜语"
+    }
+  },
+  {
+    "text": "帮我出一个灯谜。",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "灯谜"
+    }
+  },
+  {
+    "text": "出一个谜语给我猜猜吧！",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "谜语"
+    }
+  },
+  {
+    "text": "你说谜语给我猜。",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "谜语"
+    }
+  },
+  {
+    "text": "给我打个谜语，啊！",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "谜语"
+    }
+  },
+  {
+    "text": "再讲一个谜语吧！",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "谜语"
+    }
+  },
+  {
+    "text": "讲个谜语吧，辣。",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "谜语"
+    }
+  },
+  {
+    "text": "不辣，猜谜语。",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "谜语"
+    }
+  },
+  {
+    "text": "动物谜语。",
+    "domain": "riddle",
+    "intent": "QUERY",
+    "slots": {
+      "category": "动物谜语"
+    }
+  },
+  {
+    "text": "南京熊猫股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "南京熊猫"
+    }
+  },
+  {
+    "text": "泰山石油股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "泰山石油"
+    }
+  },
+  {
+    "text": "中海油服股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "中海油服"
+    }
+  },
+  {
+    "text": "查询下北京首创的股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "北京首创"
+    }
+  },
+  {
+    "text": "科大讯飞的股价如何",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "科大讯飞"
+    }
+  },
+  {
+    "text": "我想了解地产板块股票现在怎么样",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "地产板块"
+    }
+  },
+  {
+    "text": "罗顿发展的股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "罗顿发展"
+    }
+  },
+  {
+    "text": "查寻轻舞风股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "轻舞风"
+    }
+  },
+  {
+    "text": "科大讯飞的股票是多少a",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "科大讯飞"
+    }
+  },
+  {
+    "text": "查询标准股份的股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "标准股份"
+    }
+  },
+  {
+    "text": "查询一下南方航空的股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "南方航空"
+    }
+  },
+  {
+    "text": "查询大北农的股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "大北农"
+    }
+  },
+  {
+    "text": "查询股票00230",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "code": "00230"
+    }
+  },
+  {
+    "text": "查询中国石化的股价",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "中国石化"
+    }
+  },
+  {
+    "text": "保利地产的股票",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "保利地产"
+    }
+  },
+  {
+    "text": "中国建设银行的行情",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "建设银行"
+    }
+  },
+  {
+    "text": "查寻三星股价",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "三星"
+    }
+  },
+  {
+    "text": "中国石化的股价怎么样",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "中国石化"
+    }
+  },
+  {
+    "text": "今天上证指数是几点",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "上证指数"
+    }
+  },
+  {
+    "text": "查找科大讯飞股票的股价",
+    "domain": "stock",
+    "intent": "QUERY",
+    "slots": {
+      "name": "科大讯飞"
+    }
+  },
+  {
+    "text": "呼叫浦蒲",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "浦蒲"
+    }
+  },
+  {
+    "text": "我要打电话给洪云刚",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "洪云刚"
+    }
+  },
+  {
+    "text": "打电话给张帕楼",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "张帕楼"
+    }
+  },
+  {
+    "text": "打给孩子的爸",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "孩子的爸"
+    }
+  },
+  {
+    "text": "打电话给阿华",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "阿华"
+    }
+  },
+  {
+    "text": "打给宋成钢",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "宋成钢"
+    }
+  },
+  {
+    "text": "请打电话给沈晨浩",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "沈晨浩"
+    }
+  },
+  {
+    "text": "给叶君恩打电话",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "叶君恩"
+    }
+  },
+  {
+    "text": "呼叫王希",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "王希"
+    }
+  },
+  {
+    "text": "给爸爸打电话",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "爸爸"
+    }
+  },
+  {
+    "text": "打电话给子明",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "子明"
+    }
+  },
+  {
+    "text": "打电话温正军",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "温正军"
+    }
+  },
+  {
+    "text": "给曹广义打电话",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "曹广义"
+    }
+  },
+  {
+    "text": "打电话给hello word",
+    "domain": "telephone",
+    "intent": "DIAL",
+    "slots": {
+      "name": "hello word"
+    }
+  },
+  {
+    "text": "查寻上海到北京的火车票",
+    "domain": "train",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "北京",
+      "startLoc_city": "上海"
+    }
+  },
+  {
+    "text": "帮我查一下明天去郑州的火车票",
+    "domain": "train",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "郑州",
+      "startDate_date": "明天"
+    }
+  },
+  {
+    "text": "查询广州到北京的火车",
+    "domain": "train",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "北京",
+      "startLoc_city": "广州"
+    }
+  },
+  {
+    "text": "从广州到南昌的火车票时刻表",
+    "domain": "train",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "南昌",
+      "startLoc_city": "广州"
+    }
+  },
+  {
+    "text": "查一下从杭州到上海高铁时刻表",
+    "domain": "train",
+    "intent": "QUERY",
+    "slots": {
+      "category": "高铁",
+      "endLoc_city": "上海",
+      "startLoc_city": "杭州"
+    }
+  },
+  {
+    "text": "查一下从广州到南宁的火车票",
+    "domain": "train",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "南宁",
+      "startLoc_city": "广州"
+    }
+  },
+  {
+    "text": "有没有徐州到洛阳的火车票",
+    "domain": "train",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "洛阳",
+      "startLoc_city": "徐州"
+    }
+  },
+  {
+    "text": "查询临沂到济南的火车票",
+    "domain": "train",
+    "intent": "QUERY",
+    "slots": {
+      "endLoc_city": "济南",
+      "startLoc_city": "临沂"
+    }
+  }
+]
