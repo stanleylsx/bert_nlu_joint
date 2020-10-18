@@ -69,7 +69,7 @@ class DataManager:
         domain_labels = set([data['domain'] for data in data_list])
         intent_labels = set([str(data['intent']) for data in data_list])
         slots_labels = set()
-        for data in data_list:
+        for data in tqdm(data_list):
             for slot in data['slots']:
                 slots_labels.add('B-{}'.format(slot))
                 slots_labels.add('I-{}'.format(slot))
@@ -136,7 +136,7 @@ class DataManager:
         intent = []
         slot = []
         att_mask = []
-        for data in data_list:
+        for data in tqdm(data_list):
             text = data['text']
             tmp_domain = self.domain2id[data['domain']]
             tmp_intent = self.intent2id[data['intent']]
