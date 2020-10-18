@@ -63,4 +63,5 @@ if __name__ == '__main__':
     configs.show_data_summary(logger)
     set_env(configs)
     mode = configs.mode.lower()
-    # dataManager = DataManager(configs, logger)
+    dataManager = DataManager(configs, logger)
+    dataManager.get_training_set()
