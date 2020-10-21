@@ -110,12 +110,7 @@ class DataManager:
                 domain_batch.append(domain[index])
                 intent_batch.append(intent[index])
                 slot_batch.append(slot[index])
-        X_batch = np.array(X_batch)
-        att_mask_batch = np.array(att_mask_batch)
-        domain_batch = np.array(domain_batch)
-        intent_batch = np.array(intent_batch)
-        slot_batch = np.array(slot_batch)
-        return X_batch, att_mask_batch, domain_batch, intent_batch, slot_batch
+        return np.array(X_batch), np.array(att_mask_batch), np.array(domain_batch), np.array(intent_batch), np.array(slot_batch)
 
     def get_slot_label(self, text, slots):
         tag = ['O'] * len(text)
@@ -182,8 +177,8 @@ class DataManager:
         X = X[indices]
         att_mask = att_mask[indices]
         domain = domain[indices]
-        intent = domain[intent]
-        slot = domain[slot]
+        intent = intent[indices]
+        slot = slot[indices]
 
         if self.dev_file is not None:
             X_train = X
