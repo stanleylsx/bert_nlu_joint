@@ -11,9 +11,11 @@ from tensorflow_addons.text.crf import crf_log_likelihood
 
 
 class BiLSTM_CRFModel(tf.keras.Model, ABC):
-    def __init__(self, configs, vocab_size, num_classes):
+    """
+    槽位识别
+    """
+    def __init__(self, configs, num_classes):
         super(BiLSTM_CRFModel, self).__init__()
-        self.embedding = tf.keras.layers.Embedding(vocab_size, configs.embedding_dim, mask_zero=True)
         self.hidden_dim = configs.hidden_dim
         self.dropout_rate = configs.dropout
         self.dropout = tf.keras.layers.Dropout(self.dropout_rate)
@@ -34,28 +36,34 @@ class BiLSTM_CRFModel(tf.keras.Model, ABC):
 
 
 class DomainClassificationModel(tf.keras.Model, ABC):
-    def __init__(self, num_classes):
+    """
+    主题识别
+    """
+    def __init__(self, configs, num_classes):
         super(DomainClassificationModel, self).__init__()
+        self.dropout_rate = configs.dropout
+        self.dropout = tf.keras.layers.Dropout(self.dropout_rate)
         self.dense = tf.keras.layers.Dense(num_classes)
 
     @tf.function
     def call(self, inputs):
-        embedding_inputs = inputs
-        logits = self.dense(embedding_inputs)
+        dropout_inputs = self.dropout(inputs)
+        logits = self.dense(dropout_inputs)
         return logits
 
 
 class IntentClassificationModel(tf.keras.Model, ABC):
-    def __init__(self, num_classes):
+    """
+    意图识别
+    """
+    def __init__(self, configs, num_classes):
         super(IntentClassificationModel, self).__init__()
+        self.dropout_rate = configs.dropout
+        self.dropout = tf.keras.layers.Dropout(self.dropout_rate)
         self.dense = tf.keras.layers.Dense(num_classes)
 
     @tf.function
     def call(self, inputs):
-        embedding_inputs = inputs
-        logits = self.dense(embedding_inputs)
+        dropout_inputs = self.dropout(inputs)
+        logits = self.dense(dropout_inputs)
         return logits
-
-
-
-

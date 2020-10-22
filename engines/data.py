@@ -39,7 +39,7 @@ class DataManager:
         self.max_token_number = len(self.tokenizer.get_vocab())
         self.domain_class_number = len(self.domain2id)
         self.intent_class_number = len(self.intent2id)
-        self.domain_slot_number = len(self.slot2id)
+        self.slot_class_number = len(self.slot2id)
 
     @staticmethod
     def read_data(files):
