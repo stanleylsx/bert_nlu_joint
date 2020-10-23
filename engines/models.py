@@ -43,11 +43,11 @@ class DomainClassificationModel(tf.keras.Model, ABC):
         super(DomainClassificationModel, self).__init__()
         self.dropout_rate = configs.dropout
         self.dropout = tf.keras.layers.Dropout(self.dropout_rate)
-        self.dense = tf.keras.layers.Dense(num_classes)
+        self.dense = tf.keras.layers.Dense(num_classes, activation='softmax')
 
     @tf.function
-    def call(self, inputs):
-        dropout_inputs = self.dropout(inputs)
+    def call(self, inputs, training=None):
+        dropout_inputs = self.dropout(inputs, training)
         logits = self.dense(dropout_inputs)
         return logits
 
@@ -60,10 +60,10 @@ class IntentClassificationModel(tf.keras.Model, ABC):
         super(IntentClassificationModel, self).__init__()
         self.dropout_rate = configs.dropout
         self.dropout = tf.keras.layers.Dropout(self.dropout_rate)
-        self.dense = tf.keras.layers.Dense(num_classes)
+        self.dense = tf.keras.layers.Dense(num_classes, activation='softmax')
 
     @tf.function
-    def call(self, inputs):
-        dropout_inputs = self.dropout(inputs)
+    def call(self, inputs, training=None):
+        dropout_inputs = self.dropout(inputs, training)
         logits = self.dense(dropout_inputs)
         return logits

@@ -11,6 +11,7 @@ import os
 from engines.configure import Configure
 from engines.utils.logger import get_logger
 from engines.data import DataManager
+from engines.train import train
 
 
 def set_env(configures):
@@ -64,4 +65,4 @@ if __name__ == '__main__':
     set_env(configs)
     mode = configs.mode.lower()
     dataManager = DataManager(configs, logger)
-    dataManager.get_training_set()
+    train(configs, dataManager, logger)

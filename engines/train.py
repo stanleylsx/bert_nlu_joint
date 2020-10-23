@@ -12,6 +12,7 @@ from tqdm import tqdm
 from tensorflow_addons.text.crf import crf_decode
 from transformers import TFBertModel, BertTokenizer
 from engines.models import BiLSTM_CRFModel, DomainClassificationModel, IntentClassificationModel
+from engines.utils.metrics import cal_metrics
 
 
 def train(configs, data_manager, logger):
@@ -47,7 +48,7 @@ def train(configs, data_manager, logger):
         start_time = time.time()
         logger.info('epoch:{}/{}'.format(i + 1, epoch))
         for iteration in tqdm(range(num_iterations)):
-            X_train_batch, att_mask_train_batch, domain_train_batch, intent_train_batch, slot_train_batch\
+            X_train_batch, att_mask_train_batch, domain_train_batch, intent_train_batch, slot_train_batch \
                 = data_manager.next_batch(X_train, att_mask_train, domain_train, intent_train, slot_train,
                                           start_index=iteration * batch_size)
             inputs_length = tf.math.count_nonzero(X_train_batch, 1)
@@ -56,20 +57,32 @@ def train(configs, data_manager, logger):
             with tf.GradientTape() as tape:
                 # 槽位模型输入
                 slot_logits, slot_log_likelihood, slot_transition_params = bilstm_crf_model.call(
-                    inputs=bert_model_inputs, inputs_length=inputs_length, targets=slot_train, training=1)
+                    inputs=bert_model_inputs, inputs_length=inputs_length, targets=slot_train_batch, training=1)
                 slot_loss = -tf.reduce_mean(slot_log_likelihood)
                 # 主题模型的输入
-                domain_logits = domain_model.call(inputs=bert_model_inputs)
+                domain_logits = domain_model.call(inputs=bert_model_inputs[:, 0, :], training=1)
                 domain_loss_vec = tf.keras.losses.sparse_categorical_crossentropy(y_pred=domain_logits,
-                                                                                  y_true=domain_train)
+                                                                                  y_true=domain_train_batch)
                 domain_loss = tf.reduce_mean(domain_loss_vec)
                 # 意图模型的输入
-                intent_logits = intent_model.call(inputs=bert_model_inputs)
+                intent_logits = intent_model.call(inputs=bert_model_inputs[:, 0, :], training=1)
                 intent_loss_vec = tf.keras.losses.sparse_categorical_crossentropy(y_pred=intent_logits,
-                                                                                  y_true=intent_train)
+                                                                                  y_true=intent_train_batch)
                 intent_loss = tf.reduce_mean(intent_loss_vec)
                 total_loss = domain_loss + intent_loss + 2 * slot_loss
-                # 定义好参加梯度的参数
-                gradients = tape.gradient(total_loss, )
+            # 参数列表
+            trainable_variables = bilstm_crf_model.trainable_variables + domain_model.trainable_variables + intent_model.trainable_variables
+            # 定义好参加梯度的参数
+            gradients = tape.gradient(total_loss, trainable_variables)
+            # 反向传播，自动微分计算
+            optimizer.apply_gradients(zip(gradients, trainable_variables))
+
+            if iteration % configs.print_per_batch == 0 and iteration != 0:
+                domain_predictions = tf.argmax(domain_logits, axis=-1)
+                intent_predictions = tf.argmax(intent_logits, axis=-1)
+                domain_measures = cal_metrics(y_true=domain_train_batch, y_pred=domain_predictions)
+                intent_measures = cal_metrics(y_true=intent_train_batch, y_pred=intent_predictions)
+                print(domain_measures)
+                print(intent_measures)
 
 
