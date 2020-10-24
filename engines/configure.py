@@ -29,14 +29,6 @@ class Configure:
         else:
             self.dev_file = None
 
-        the_item = 'delimiter'
-        if the_item in config:
-            self.delimiter = config[the_item]
-
-        the_item = 'use_bert'
-        if the_item in config:
-            self.use_bert = self.str2bool(config[the_item])
-
         the_item = 'vocabs_dir'
         if the_item in config:
             self.vocabs_dir = config[the_item]
@@ -49,38 +41,10 @@ class Configure:
         if the_item in config:
             self.log_dir = config[the_item]
 
-        # Labeling Scheme
-        the_item = 'label_scheme'
-        if the_item in config:
-            self.label_scheme = config[the_item]
-
-        the_item = 'label_level'
-        if the_item in config:
-            self.label_level = int(config[the_item])
-
-        the_item = 'hyphen'
-        if the_item in config:
-            self.hyphen = config[the_item]
-
-        the_item = 'suffix'
-        if the_item in config:
-            self.suffix = config[the_item]
-
-        the_item = 'measuring_metrics'
-        if the_item in config:
-            self.measuring_metrics = config[the_item]
-
-        the_item = 'embedding_dim'
-        if the_item in config:
-            if not self.use_bert:
-                self.embedding_dim = int(config[the_item])
-            else:
-                self.embedding_dim = 768
-
         the_item = 'max_sequence_length'
         if the_item in config:
             self.max_sequence_length = int(config[the_item])
-        if self.use_bert and self.max_sequence_length > 512:
+        if self.max_sequence_length > 512:
             raise Exception('the max sequence length over 512 in Bert mode')
 
         the_item = 'hidden_dim'
@@ -116,10 +80,6 @@ class Configure:
         the_item = 'learning_rate'
         if the_item in config:
             self.learning_rate = float(config[the_item])
-
-        the_item = 'optimizer'
-        if the_item in config:
-            self.optimizer = config[the_item]
 
         the_item = 'checkpoint_name'
         if the_item in config:
@@ -181,19 +141,10 @@ class Configure:
         logger.info('     train            file: {}'.format(self.train_file))
         logger.info('     validation       file: {}'.format(self.dev_file))
         logger.info('     vocab             dir: {}'.format(self.vocabs_dir))
-        logger.info('     delimiter            : {}'.format(self.delimiter))
-        logger.info('     use              bert: {}'.format(self.use_bert))
         logger.info('     checkpoints       dir: {}'.format(self.checkpoints_dir))
         logger.info('     log               dir: {}'.format(self.log_dir))
         logger.info(' ' + '++' * 20)
-        logger.info('Labeling Scheme:')
-        logger.info('     label          scheme: {}'.format(self.label_scheme))
-        logger.info('     label           level: {}'.format(self.label_level))
-        logger.info('     suffixes             : {}'.format(self.suffix))
-        logger.info('     measuring     metrics: {}'.format(self.measuring_metrics))
-        logger.info(' ' + '++' * 20)
         logger.info('Model Configuration:')
-        logger.info('     embedding         dim: {}'.format(self.embedding_dim))
         logger.info('     max  sequence  length: {}'.format(self.max_sequence_length))
         logger.info('     hidden            dim: {}'.format(self.hidden_dim))
         logger.info('     CUDA  VISIBLE  DEVICE: {}'.format(self.CUDA_VISIBLE_DEVICES))
@@ -204,7 +155,6 @@ class Configure:
         logger.info('     batch            size: {}'.format(self.batch_size))
         logger.info('     dropout              : {}'.format(self.dropout))
         logger.info('     learning         rate: {}'.format(self.learning_rate))
-        logger.info('     optimizer            : {}'.format(self.optimizer))
         logger.info('     checkpoint       name: {}'.format(self.checkpoint_name))
         logger.info('     max       checkpoints: {}'.format(self.checkpoints_max_to_keep))
         logger.info('     print       per_batch: {}'.format(self.print_per_batch))
