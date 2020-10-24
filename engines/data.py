@@ -210,8 +210,7 @@ class DataManager:
         :return:
         """
         data_list = self.read_data(self.dev_file)
-        X_val, att_mask_val, domain_val, intent_val, slot_val = self.prepare(data_list)
-        return X_val, att_mask_val, domain_val, intent_val, slot_val
+        return self.prepare(data_list)
 
     # def prepare_single_sentence(self, sentence):
     #     """

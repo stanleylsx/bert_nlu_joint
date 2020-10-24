@@ -12,13 +12,14 @@ from tqdm import tqdm
 from tensorflow_addons.text.crf import crf_decode
 from transformers import TFBertModel, BertTokenizer
 from engines.models import BiLSTM_CRFModel, DomainClassificationModel, IntentClassificationModel
-from engines.utils.metrics import cal_metrics
+from engines.utils.metrics import cal_metrics, cal_slots_metrics
 
 
 def train(configs, data_manager, logger):
     domain_classes = data_manager.domain_class_number
     intent_classes = data_manager.intent_class_number
     slot_classes = data_manager.slot_class_number
+    id2slot = data_manager.id2slot
     learning_rate = configs.learning_rate
     max_to_keep = configs.checkpoints_max_to_keep
     checkpoints_dir = configs.checkpoints_dir
@@ -84,5 +85,7 @@ def train(configs, data_manager, logger):
                 intent_measures = cal_metrics(y_true=intent_train_batch, y_pred=intent_predictions)
                 print(domain_measures)
                 print(intent_measures)
-
+                batch_pred_sequence, _ = crf_decode(slot_logits, slot_transition_params, inputs_length)
+                slot_measures = cal_slots_metrics(
+                    X_train_batch, slot_train_batch, batch_pred_sequence, id2slot, tokenizer)
 
