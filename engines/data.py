@@ -211,22 +211,3 @@ class DataManager:
         """
         data_list = self.read_data(self.dev_file)
         return self.prepare(data_list)
-
-    # def prepare_single_sentence(self, sentence):
-    #     """
-    #     把预测的句子转成矩阵和向量
-    #     :param sentence:
-    #     :return:
-    #     """
-    #     sentence = list(sentence)
-    #     if len(sentence) <= self.max_sequence_length - 2:
-    #         x = self.tokenizer.encode(sentence)
-    #         att_mask = [1] * len(x)
-    #         x += [0 for _ in range(self.max_sequence_length - len(x))]
-    #         att_mask += [0 for _ in range(self.max_sequence_length - len(att_mask))]
-    #     else:
-    #         sentence = sentence[:self.max_sequence_length-2]
-    #         x = self.tokenizer.encode(sentence)
-    #         att_mask = [1] * len(x)
-    #     y = [self.label2id['O']] * self.max_sequence_length
-    #     return np.array([x]), np.array([y]), np.array([att_mask]), np.array([sentence])

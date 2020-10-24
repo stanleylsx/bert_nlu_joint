@@ -83,9 +83,19 @@ def train(configs, data_manager, logger):
                 intent_predictions = tf.argmax(intent_logits, axis=-1)
                 domain_measures = cal_metrics(y_true=domain_train_batch, y_pred=domain_predictions)
                 intent_measures = cal_metrics(y_true=intent_train_batch, y_pred=intent_predictions)
-                print(domain_measures)
-                print(intent_measures)
                 batch_pred_sequence, _ = crf_decode(slot_logits, slot_transition_params, inputs_length)
                 slot_measures = cal_slots_metrics(
                     X_train_batch, slot_train_batch, batch_pred_sequence, id2slot, tokenizer)
+                domain_str = ''
+                for k, v in domain_measures.items():
+                    domain_str += (k + ': %.3f ' % v)
+                logger.info('training batch: %5d, domain_loss: %.5f, %s' % (iteration, domain_loss, domain_str))
+                intent_str = ''
+                for k, v in intent_measures.items():
+                    intent_str += (k + ': %.3f ' % v)
+                logger.info('training batch: %5d, intent_loss: %.5f, %s' % (iteration, intent_loss, intent_str))
+                slot_str = ''
+                for k, v in slot_measures.items():
+                    slot_str += (k + ': %.3f ' % v)
+                logger.info('training batch: %5d, slot_loss: %.5f, %s' % (iteration, slot_loss, slot_str))
 

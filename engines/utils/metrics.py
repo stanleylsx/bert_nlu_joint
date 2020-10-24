@@ -33,19 +33,19 @@ def get_slots_item(text, slot_label, id2slot):
 
 def cal_slots_metrics(x_batch, y_true_batch, y_pred_batch, id2slot, tokenizer):
     correct, p_denominator, r_denominator = 0, 0, 0
-    precision = -1.0
-    recall = -1.0
-    f1 = -1.0
+    precision = 0
+    recall = 0
+    f1 = 0
     for x, y_true, y_pred in zip(x_batch, y_true_batch, y_pred_batch):
         text = tokenizer.convert_ids_to_tokens(x.tolist())
         true_dic = get_slots_item(text, y_true.tolist(), id2slot)
         pred_dic = get_slots_item(text, y_pred.numpy().tolist(), id2slot)
         r_denominator += len(true_dic)
         p_denominator += len(pred_dic)
-        for key, value in pred_dic.items():
+        for key, value in true_dic.items():
             if key not in pred_dic:
                 continue
-            elif pred_dic[key] == pred_dic[key]:
+            elif pred_dic[key] == true_dic[key]:
                 correct += 1
     if p_denominator != 0:
         precision = float(correct) / p_denominator
