@@ -5,7 +5,6 @@
 # @File : train.py
 # @Software: PyCharm
 import tensorflow as tf
-import numpy as np
 import math
 import time
 from tqdm import tqdm
@@ -21,13 +20,6 @@ def train(configs, data_manager, logger):
     slot_classes = data_manager.slot_class_number
     id2slot = data_manager.id2slot
     learning_rate = configs.learning_rate
-    max_to_keep = configs.checkpoints_max_to_keep
-    checkpoints_dir = configs.checkpoints_dir
-    checkpoint_name = configs.checkpoint_name
-    best_f1_val = 0.0
-    best_at_epoch = 0
-    unprocessed = 0
-    very_start_time = time.time()
     epoch = configs.epoch
     batch_size = configs.batch_size
 
@@ -84,8 +76,7 @@ def train(configs, data_manager, logger):
                 domain_measures = cal_metrics(y_true=domain_train_batch, y_pred=domain_predictions)
                 intent_measures = cal_metrics(y_true=intent_train_batch, y_pred=intent_predictions)
                 batch_pred_sequence, _ = crf_decode(slot_logits, slot_transition_params, inputs_length)
-                slot_measures = cal_slots_metrics(
-                    X_train_batch, slot_train_batch, batch_pred_sequence, id2slot, tokenizer)
+                slot_measures = cal_slots_metrics(X_train_batch, slot_train_batch, batch_pred_sequence, id2slot, tokenizer)
                 domain_str = ''
                 for k, v in domain_measures.items():
                     domain_str += (k + ': %.3f ' % v)
@@ -98,4 +89,53 @@ def train(configs, data_manager, logger):
                 for k, v in slot_measures.items():
                     slot_str += (k + ': %.3f ' % v)
                 logger.info('training batch: %5d, slot_loss: %.5f, %s' % (iteration, slot_loss, slot_str))
+        # validation
+        logger.info('start evaluate engines...')
+        slot_val_results = {'precision': 0, 'recall': 0, 'f1': 0}
+        domain_val_results = {'precision': 0, 'recall': 0, 'f1': 0}
+        intent_val_results = {'precision': 0, 'recall': 0, 'f1': 0}
+        for iteration in tqdm(range(num_val_iterations)):
+            X_val_batch, att_mask_val_batch, domain_val_batch, intent_val_batch, slot_val_batch \
+                = data_manager.next_batch(X_val, att_mask_val, domain_val, intent_val, slot_val,
+                                          start_index=iteration * batch_size)
+            inputs_length = tf.math.count_nonzero(X_val_batch, 1)
+            # 获得bert模型的输出
+            bert_model_inputs = bert_model(X_val_batch, attention_mask=att_mask_val_batch)[0]
+            # 槽位模型预测
+            slot_logits, slot_log_likelihood, slot_transition_params = bilstm_crf_model.call(
+                inputs=bert_model_inputs, inputs_length=inputs_length, targets=slot_val_batch)
+            batch_pred_sequence, _ = crf_decode(slot_logits, slot_transition_params, inputs_length)
+            slot_measures = cal_slots_metrics(X_val_batch, slot_val_batch, batch_pred_sequence, id2slot, tokenizer)
+            # 主题模型的预测
+            domain_logits = domain_model.call(inputs=bert_model_inputs[:, 0, :])
+            domain_predictions = tf.argmax(domain_logits, axis=-1)
+            domain_measures = cal_metrics(y_true=domain_val_batch, y_pred=domain_predictions)
+            # 意图模型的预测
+            intent_logits = intent_model.call(inputs=bert_model_inputs[:, 0, :])
+            intent_predictions = tf.argmax(intent_logits, axis=-1)
+            intent_measures = cal_metrics(y_true=intent_val_batch, y_pred=intent_predictions)
 
+            for k, v in slot_measures.items():
+                slot_val_results[k] += v
+            for k, v in domain_measures.items():
+                domain_val_results[k] += v
+            for k, v in intent_measures.items():
+                intent_val_results[k] += v
+
+        time_span = (time.time() - start_time) / 60
+        val_slot_str = ''
+        val_domain_str = ''
+        val_intent_str = ''
+        for k, v in slot_val_results.items():
+            slot_val_results[k] /= num_val_iterations
+            val_slot_str += (k + ': %.3f ' % slot_val_results[k])
+        for k, v in domain_val_results.items():
+            domain_val_results[k] /= num_val_iterations
+            val_domain_str += (k + ': %.3f ' % domain_val_results[k])
+        for k, v in intent_val_results.items():
+            intent_val_results[k] /= num_val_iterations
+            val_intent_str += (k + ': %.3f ' % intent_val_results[k])
+        logger.info(val_slot_str)
+        logger.info(val_domain_str)
+        logger.info(val_intent_str)
+        logger.info('time consumption:%.2f(min)' % time_span)
