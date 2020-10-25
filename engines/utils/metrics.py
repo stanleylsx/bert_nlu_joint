@@ -8,9 +8,11 @@ from sklearn import metrics
 
 
 def cal_metrics(y_true, y_pred):
+    f1 = 0.0
     precision = metrics.precision_score(y_true, y_pred, average='macro')
     recall = metrics.recall_score(y_true, y_pred, average='macro')
-    f1 = metrics.f1_score(y_true, y_pred, average='weighted')
+    if precision + recall > 0:
+        f1 = 2 * precision * recall / (precision + recall)
     return {'precision': precision, 'recall': recall, 'f1': f1}
 
 

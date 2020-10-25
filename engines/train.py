@@ -80,15 +80,16 @@ def train(configs, data_manager, logger):
                 domain_str = ''
                 for k, v in domain_measures.items():
                     domain_str += (k + ': %.3f ' % v)
-                logger.info('training batch: %5d, domain_loss: %.5f, %s' % (iteration, domain_loss, domain_str))
+                logger.info('training batch: {}'.format (iteration))
+                logger.info('domain_loss: %.5f, %s' % (domain_loss, domain_str))
                 intent_str = ''
                 for k, v in intent_measures.items():
                     intent_str += (k + ': %.3f ' % v)
-                logger.info('training batch: %5d, intent_loss: %.5f, %s' % (iteration, intent_loss, intent_str))
+                logger.info('intent_loss: %.5f, %s' % (intent_loss, intent_str))
                 slot_str = ''
                 for k, v in slot_measures.items():
                     slot_str += (k + ': %.3f ' % v)
-                logger.info('training batch: %5d, slot_loss: %.5f, %s' % (iteration, slot_loss, slot_str))
+                logger.info('slot_loss: %.5f, %s' % (slot_loss, slot_str))
         # validation
         logger.info('start evaluate engines...')
         slot_val_results = {'precision': 0, 'recall': 0, 'f1': 0}
@@ -135,7 +136,7 @@ def train(configs, data_manager, logger):
         for k, v in intent_val_results.items():
             intent_val_results[k] /= num_val_iterations
             val_intent_str += (k + ': %.3f ' % intent_val_results[k])
-        logger.info(val_slot_str)
-        logger.info(val_domain_str)
-        logger.info(val_intent_str)
+        logger.info('slot: {}'.format(val_slot_str))
+        logger.info('domain: {}'.format(val_domain_str))
+        logger.info('intent: {}'.format(val_intent_str))
         logger.info('time consumption:%.2f(min)' % time_span)
