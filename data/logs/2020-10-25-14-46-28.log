@@ -1,0 +1,210 @@
+2020-10-25 14:46:28
+++++++++++++++++++++++++++++++++++++++++CONFIGURATION SUMMARY++++++++++++++++++++++++++++++++++++++++
+ Status:
+     mode                 : train
+ ++++++++++++++++++++++++++++++++++++++++
+ Datasets:
+     datasets         fold: data
+     train            file: train.json
+     validation       file: dev.json
+     vocab             dir: data/vocabs
+     checkpoints       dir: checkpoints/
+     log               dir: data/logs
+ ++++++++++++++++++++++++++++++++++++++++
+Model Configuration:
+     max  sequence  length: 128
+     hidden            dim: 200
+     CUDA  VISIBLE  DEVICE: 0
+     seed                 : 42
+ ++++++++++++++++++++++++++++++++++++++++
+ Training Settings:
+     epoch                : 300
+     batch            size: 32
+     dropout              : 0.5
+     learning         rate: 0.001
+     checkpoint       name: model
+     max       checkpoints: 3
+     print       per_batch: 20
+     is     early     stop: True
+     patient              : 5
+++++++++++++++++++++++++++++++++++++++++CONFIGURATION SUMMARY END++++++++++++++++++++++++++++++++++++++++
+loading data...
+loading data...
+training set size: 2193, validating set size: 386
+++++++++++++++++++++training starting++++++++++++++++++++
+epoch:1/300
+training batch: 20
+domain_loss: 2.43215, precision: 0.095 recall: 0.115 f1: 0.104 
+intent_loss: 1.22660, precision: 0.300 recall: 0.243 f1: 0.269 
+slot_loss: 19.25823, precision: 0.050 recall: 0.024 f1: 0.032 
+training batch: 40
+domain_loss: 2.06437, precision: 0.312 recall: 0.367 f1: 0.337 
+intent_loss: 1.46854, precision: 0.319 recall: 0.361 f1: 0.339 
+slot_loss: 13.54903, precision: 0.333 recall: 0.229 f1: 0.272 
+training batch: 60
+domain_loss: 1.91091, precision: 0.357 recall: 0.341 f1: 0.349 
+intent_loss: 1.22089, precision: 0.242 recall: 0.255 f1: 0.248 
+slot_loss: 6.84419, precision: 0.405 recall: 0.366 f1: 0.385 
+start evaluate engines...
+slot: precision: 0.417 recall: 0.380 f1: 0.397 
+domain: precision: 0.491 recall: 0.409 f1: 0.444 
+intent: precision: 0.499 recall: 0.452 f1: 0.454 
+time consumption:10.81(min)
+epoch:2/300
+training batch: 20
+domain_loss: 1.21963, precision: 0.607 recall: 0.565 f1: 0.585 
+intent_loss: 0.74887, precision: 0.488 recall: 0.483 f1: 0.485 
+slot_loss: 9.22502, precision: 0.366 recall: 0.357 f1: 0.361 
+training batch: 40
+domain_loss: 1.06311, precision: 0.603 recall: 0.640 f1: 0.621 
+intent_loss: 0.92694, precision: 0.515 recall: 0.312 f1: 0.389 
+slot_loss: 6.25037, precision: 0.488 recall: 0.438 f1: 0.462 
+training batch: 60
+domain_loss: 0.96994, precision: 0.650 recall: 0.667 f1: 0.658 
+intent_loss: 0.65180, precision: 0.590 recall: 0.572 f1: 0.581 
+slot_loss: 3.06771, precision: 0.628 recall: 0.659 f1: 0.643 
+start evaluate engines...
+slot: precision: 0.574 recall: 0.576 f1: 0.575 
+domain: precision: 0.566 recall: 0.523 f1: 0.543 
+intent: precision: 0.595 recall: 0.533 f1: 0.549 
+time consumption:13.69(min)
+epoch:3/300
+training batch: 20
+domain_loss: 0.74935, precision: 0.717 recall: 0.707 f1: 0.712 
+intent_loss: 0.63149, precision: 0.417 recall: 0.483 f1: 0.447 
+slot_loss: 5.27512, precision: 0.523 recall: 0.548 f1: 0.535 
+training batch: 40
+domain_loss: 0.73095, precision: 0.618 recall: 0.719 f1: 0.665 
+intent_loss: 0.66197, precision: 0.483 recall: 0.518 f1: 0.500 
+slot_loss: 4.29322, precision: 0.500 recall: 0.479 f1: 0.489 
+training batch: 60
+domain_loss: 0.85359, precision: 0.540 recall: 0.579 f1: 0.559 
+intent_loss: 0.61455, precision: 0.459 recall: 0.510 f1: 0.483 
+slot_loss: 2.27351, precision: 0.732 recall: 0.732 f1: 0.732 
+start evaluate engines...
+slot: precision: 0.653 recall: 0.651 f1: 0.651 
+domain: precision: 0.599 recall: 0.562 f1: 0.579 
+intent: precision: 0.694 recall: 0.654 f1: 0.667 
+time consumption:12.89(min)
+epoch:4/300
+training batch: 20
+domain_loss: 0.53398, precision: 0.830 recall: 0.810 f1: 0.820 
+intent_loss: 0.41511, precision: 0.736 recall: 0.730 f1: 0.733 
+slot_loss: 3.69142, precision: 0.643 recall: 0.643 f1: 0.643 
+training batch: 40
+domain_loss: 0.52195, precision: 0.700 recall: 0.733 f1: 0.716 
+intent_loss: 0.48613, precision: 0.787 recall: 0.667 f1: 0.722 
+slot_loss: 2.91094, precision: 0.688 recall: 0.688 f1: 0.688 
+training batch: 60
+domain_loss: 0.56341, precision: 0.728 recall: 0.772 f1: 0.749 
+intent_loss: 0.45608, precision: 0.591 recall: 0.605 f1: 0.598 
+slot_loss: 1.32081, precision: 0.805 recall: 0.805 f1: 0.805 
+start evaluate engines...
+slot: precision: 0.692 recall: 0.714 f1: 0.702 
+domain: precision: 0.681 recall: 0.660 f1: 0.669 
+intent: precision: 0.720 recall: 0.668 f1: 0.689 
+time consumption:14.71(min)
+epoch:5/300
+training batch: 20
+domain_loss: 0.43432, precision: 0.792 recall: 0.817 f1: 0.804 
+intent_loss: 0.25760, precision: 0.765 recall: 0.743 f1: 0.754 
+slot_loss: 2.16900, precision: 0.775 recall: 0.738 f1: 0.756 
+training batch: 40
+domain_loss: 0.56629, precision: 0.863 recall: 0.868 f1: 0.866 
+intent_loss: 0.37564, precision: 0.812 recall: 0.826 f1: 0.819 
+slot_loss: 2.27893, precision: 0.725 recall: 0.771 f1: 0.747 
+training batch: 60
+domain_loss: 0.49836, precision: 0.623 recall: 0.667 f1: 0.644 
+intent_loss: 0.52691, precision: 0.669 recall: 0.768 f1: 0.715 
+slot_loss: 1.42420, precision: 0.854 recall: 0.854 f1: 0.854 
+start evaluate engines...
+slot: precision: 0.734 recall: 0.745 f1: 0.739 
+domain: precision: 0.674 recall: 0.653 f1: 0.663 
+intent: precision: 0.740 recall: 0.690 f1: 0.711 
+time consumption:15.48(min)
+epoch:6/300
+training batch: 20
+domain_loss: 0.46784, precision: 0.753 recall: 0.760 f1: 0.756 
+intent_loss: 0.21439, precision: 1.000 recall: 1.000 f1: 1.000 
+slot_loss: 1.51962, precision: 0.786 recall: 0.786 f1: 0.786 
+training batch: 40
+domain_loss: 0.47204, precision: 0.795 recall: 0.808 f1: 0.802 
+intent_loss: 0.42840, precision: 0.798 recall: 0.826 f1: 0.811 
+slot_loss: 1.43295, precision: 0.776 recall: 0.792 f1: 0.784 
+training batch: 60
+domain_loss: 0.41371, precision: 0.767 recall: 0.767 f1: 0.767 
+intent_loss: 0.38397, precision: 0.936 recall: 0.837 f1: 0.884 
+slot_loss: 0.85981, precision: 0.857 recall: 0.878 f1: 0.867 
+start evaluate engines...
+slot: precision: 0.755 recall: 0.761 f1: 0.758 
+domain: precision: 0.713 recall: 0.695 f1: 0.703 
+intent: precision: 0.738 recall: 0.703 f1: 0.718 
+time consumption:11.98(min)
+epoch:7/300
+training batch: 20
+domain_loss: 0.28409, precision: 0.878 recall: 0.887 f1: 0.882 
+intent_loss: 0.24713, precision: 0.738 recall: 0.667 f1: 0.700 
+slot_loss: 1.40603, precision: 0.841 recall: 0.881 f1: 0.860 
+training batch: 40
+domain_loss: 0.34552, precision: 0.916 recall: 0.921 f1: 0.918 
+intent_loss: 0.29551, precision: 0.829 recall: 0.867 f1: 0.848 
+slot_loss: 1.27764, precision: 0.812 recall: 0.812 f1: 0.812 
+training batch: 60
+domain_loss: 0.37404, precision: 0.781 recall: 0.842 f1: 0.810 
+intent_loss: 0.27677, precision: 0.946 recall: 0.931 f1: 0.938 
+slot_loss: 0.88691, precision: 0.905 recall: 0.927 f1: 0.916 
+start evaluate engines...
+slot: precision: 0.780 recall: 0.774 f1: 0.777 
+domain: precision: 0.696 recall: 0.678 f1: 0.686 
+intent: precision: 0.768 recall: 0.734 f1: 0.749 
+time consumption:11.11(min)
+epoch:8/300
+training batch: 20
+domain_loss: 0.33819, precision: 0.956 recall: 0.957 f1: 0.956 
+intent_loss: 0.28499, precision: 0.821 recall: 0.750 f1: 0.784 
+slot_loss: 1.43643, precision: 0.854 recall: 0.833 f1: 0.843 
+training batch: 40
+domain_loss: 0.40244, precision: 0.758 recall: 0.816 f1: 0.786 
+intent_loss: 0.32426, precision: 0.819 recall: 0.833 f1: 0.826 
+slot_loss: 0.99736, precision: 0.854 recall: 0.854 f1: 0.854 
+training batch: 60
+domain_loss: 0.26271, precision: 1.000 recall: 1.000 f1: 1.000 
+intent_loss: 0.29409, precision: 0.962 recall: 0.962 f1: 0.962 
+slot_loss: 0.52669, precision: 0.930 recall: 0.976 f1: 0.952 
+start evaluate engines...
+slot: precision: 0.766 recall: 0.754 f1: 0.760 
+domain: precision: 0.723 recall: 0.705 f1: 0.714 
+intent: precision: 0.776 recall: 0.740 f1: 0.756 
+time consumption:10.81(min)
+epoch:9/300
+training batch: 20
+domain_loss: 0.28878, precision: 0.906 recall: 0.920 f1: 0.913 
+intent_loss: 0.23992, precision: 0.910 recall: 0.903 f1: 0.907 
+slot_loss: 0.77977, precision: 0.905 recall: 0.905 f1: 0.905 
+training batch: 40
+domain_loss: 0.27203, precision: 0.895 recall: 0.921 f1: 0.908 
+intent_loss: 0.31810, precision: 0.698 recall: 0.742 f1: 0.719 
+slot_loss: 0.84081, precision: 0.896 recall: 0.896 f1: 0.896 
+training batch: 60
+domain_loss: 0.30425, precision: 0.842 recall: 0.895 f1: 0.868 
+intent_loss: 0.30305, precision: 0.920 recall: 0.900 f1: 0.910 
+slot_loss: 0.46038, precision: 0.951 recall: 0.951 f1: 0.951 
+start evaluate engines...
+slot: precision: 0.752 recall: 0.751 f1: 0.751 
+domain: precision: 0.708 recall: 0.688 f1: 0.698 
+intent: precision: 0.784 recall: 0.752 f1: 0.766 
+time consumption:6.71(min)
+epoch:10/300
+training batch: 20
+domain_loss: 0.23350, precision: 0.896 recall: 0.907 f1: 0.901 
+intent_loss: 0.19496, precision: 0.780 recall: 0.774 f1: 0.777 
+slot_loss: 0.73971, precision: 0.905 recall: 0.905 f1: 0.905 
+training batch: 40
+domain_loss: 0.37122, precision: 0.725 recall: 0.775 f1: 0.749 
+intent_loss: 0.31089, precision: 0.817 recall: 0.867 f1: 0.841 
+slot_loss: 0.88248, precision: 0.915 recall: 0.896 f1: 0.905 
+training batch: 60
+domain_loss: 0.29570, precision: 0.912 recall: 0.930 f1: 0.921 
+intent_loss: 0.28195, precision: 0.920 recall: 0.868 f1: 0.893 
+slot_loss: 0.43109, precision: 0.976 recall: 0.976 f1: 0.976 
+start evaluate engines...
