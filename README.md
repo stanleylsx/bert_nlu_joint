@@ -29,7 +29,7 @@ SMP2019比赛数据集
 
 * 训练中的结果
 
-![results](https://img-blog.csdnimg.cn/20201026005540872.png)
+![results](https://img-blog.csdnimg.cn/20201026010230511.png)
 
 ## 参考
 * [出门问问基于BERT的联合NLU模型：让机器更懂你的意思](https://zhuanlan.zhihu.com/p/93522464)
