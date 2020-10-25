@@ -12,12 +12,24 @@
 
 其他环境见requirements.txt
 
+## 数据集
+
+SMP2019比赛数据集
+
+* json格式
+
+![data](https://img-blog.csdnimg.cn/20201026005515144.png)
+
 ## 原理
 
 ![model](https://img-blog.csdnimg.cn/20201026003332667.png)
 
 ## 训练
 在system.config中配置好参数然后运行main.py文件
+
+* 训练中的结果
+
+![results](https://img-blog.csdnimg.cn/20201026005540872.png)
 
 ## 参考
 * [出门问问基于BERT的联合NLU模型：让机器更懂你的意思](https://zhuanlan.zhihu.com/p/93522464)

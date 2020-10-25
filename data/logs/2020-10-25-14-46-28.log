@@ -208,3 +208,16 @@ domain_loss: 0.29570, precision: 0.912 recall: 0.930 f1: 0.921
 intent_loss: 0.28195, precision: 0.920 recall: 0.868 f1: 0.893 
 slot_loss: 0.43109, precision: 0.976 recall: 0.976 f1: 0.976 
 start evaluate engines...
+slot: precision: 0.759 recall: 0.743 f1: 0.751 
+domain: precision: 0.721 recall: 0.704 f1: 0.712 
+intent: precision: 0.750 recall: 0.722 f1: 0.735 
+time consumption:7.58(min)
+epoch:11/300
+training batch: 20
+domain_loss: 0.32003, precision: 0.854 recall: 0.826 f1: 0.840 
+intent_loss: 0.17802, precision: 0.810 recall: 0.846 f1: 0.827 
+slot_loss: 0.73655, precision: 0.976 recall: 0.952 f1: 0.964 
+training batch: 40
+domain_loss: 0.39762, precision: 0.895 recall: 0.921 f1: 0.908 
+intent_loss: 0.30228, precision: 0.754 recall: 0.859 f1: 0.803 
+slot_loss: 0.67847, precision: 0.938 recall: 0.938 f1: 0.938 
